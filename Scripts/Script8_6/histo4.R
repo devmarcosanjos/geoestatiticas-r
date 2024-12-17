@@ -1,0 +1,8 @@
+#Yamamoto (2020, p. 239)
+setwd("C:\\geoEspacial\\DataR\\simetrica225")
+dados <- read.csv("simetrica225.csv",sep=";",header=TRUE)
+#setwd("C:\\geoEspacial\\DataR\\tempo")
+#pdf("Fig8_11.pdf",width=5,height=5)
+densidade <- density(dados$Zgauss)
+plot(densidade)
+#dev.off()

@@ -1,0 +1,7 @@
+#Yamamoto (2020, p. 244-245)
+setwd("C:\\geoEspacial\\DataR\\simetrica100")
+dados <- read.csv("simetrica100.csv",sep=";",header=TRUE)
+median(dados$Zgauss)
+mean(dados$Zgauss)
+range(dados$Zgauss)
+summary(dados$Zgauss)

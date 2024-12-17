@@ -1,0 +1,7 @@
+#Yamamoto (2020, p. 238)
+setwd("C:\\geoEspacial\\DataR\\simetrica225")
+dados <- read.csv("simetrica225.csv",sep=";",header=TRUE)
+#setwd("C:\\geoEspacial\\DataR\\tempo")
+#pdf("Fig8_9.pdf",width=5,height=5)
+hist(dados$Zgauss,col="red",breaks=9)
+#dev.off()

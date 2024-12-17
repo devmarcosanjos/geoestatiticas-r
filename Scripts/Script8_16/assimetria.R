@@ -1,0 +1,6 @@
+#Yamamoto (2020, p. 246)
+library("moments")
+setwd("C:\\geoEspacial\\DataR\\simetrica225")
+dados <- read.csv("simetrica225.csv",sep=";",header=TRUE)
+skewness(dados$Zgauss)
+kurtosis(dados$Zgauss)

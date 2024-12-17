@@ -1,0 +1,10 @@
+#Yamamoto (2020, p. 248)
+#setwd("C:\\geoEspacial\\DataR\\tempo")
+#pdf("Fig8_17.pdf",width=5,height=5)
+x = rlnorm(500,1,.67)
+grid = seq(0,25,.1)
+plot(grid,dlnorm(grid,1,.67),type="l",xlab="x",ylab="f(x)")
+lines(density(x),col="red")
+legend("topright",c("Densidade real","Estimada"),lty=1,col=1:2)
+#fonte: https://stats.stackexchange.com/questions/68394/plot-log-normal-distribution-in-r 
+#dev.off()

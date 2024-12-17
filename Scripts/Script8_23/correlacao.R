@@ -1,0 +1,10 @@
+#Yamamoto (2020, p. 251)
+setwd("C:\\geoEspacial\\DataR\\anscombe")
+anscombe <- read.csv("anscombe3.csv",sep=";",header=TRUE)
+#setwd("C:\\geoEspacial\\DataR\\tempo")
+#pdf("Fig8_19.pdf",width=5,height=5)
+cov(anscombe$X3,anscombe$Y1)
+cor(anscombe$X3,anscombe$Y1)
+plot(x = anscombe$X3,y = anscombe$Y1,xlab = "X3",ylab = "Y1",xlim = c(4,14),
+ylim = c(4.26,10.84),main = "Diagrama de dispersão")
+#dev.off()
